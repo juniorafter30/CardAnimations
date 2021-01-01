@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/be5776f00b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="logo"><h1 id="logos">Charlie</h1></div>
+    <section class="container2">
+
+    </section>
+    <div class="container">
+        <div class="box">
+            <h2 class="name1">
+                Socials
+            </h2>
+            <a href="#" class="buy">Go in</a>
+            <div class="circle"></div>
+            <img src="/—Pngtree—facebook logo icon fb logo_3570308.png" alt="" class="product">
+        </div>
+        <div class="box2">
+            <h2 class="name2">
+                Socials
+            </h2>
+            <a href="#" class="buy">Go in</a>
+            <div class="circle"></div>
+            <img src="/twitch_PNG51.png" alt="" class="product">
+        </div>
+        <div class="box3">
+            <h2 class="name3">
+                Socials
+            </h2>
+            <a href="#" class="buy">Go in</a>
+            <div class="circle"></div>
+            <img src="/instagram_PNG11.png" alt="" class="product">
+        </div>
+    </div>
+    <script src="/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 300
+        });
+        VanillaTilt.init(document.querySelector(".box2"), {
+            max: 25,
+            speed: 300
+        });
+        VanillaTilt.init(document.querySelector(".box3"), {
+            max: 25,
+            speed: 300
+        });  
+        VanillaTilt.init(document.querySelector("#logo"), {
+            max: 25,
+            speed: 300
+        });
+        
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100vh;
+    background: #131313;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+
+    transform-style: preserve-3d;
+}
+
+.container .box , .box2 , .box3{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.container .box::before{
+    content: "FACE";
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::before{
+    opacity: 0.04;
+}
+
+.container .box::after{
+    content: "BOOK";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover::after{
+    opacity: 0.04;
+}
+
+.container .box .name1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color:  #3b5998;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .name1{
+    top: 40px;
+    opacity: 1;
+}
+
+
+.container .box .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #3b5998;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    z-index: 10;
+    opacity: 0;
+}
+
+
+.container .box .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index:11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box2::before{
+    content: "TWI";
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box2:hover::before{
+    opacity: 0.04;
+}
+
+.container .box2::after{
+    content: "TCH";
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box2:hover::after{
+    opacity: 0.04;
+}
+
+.container .box2 .name2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #6441a5;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box2:hover .name2{
+    top: 40px;
+    opacity: 1;
+}
+
+
+.container .box2 .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background: #6441a5;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box2:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box2 .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    z-index: 10;
+    opacity: 0;
+}
+
+
+.container .box2 .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 350px;
+    transition: 0.5s;
+    z-index:11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+.container .box3::before{
+    content: "INSTA";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box3:hover::before{
+    opacity: 0.04;
+}
+
+.container .box3::after{
+    content: "GRAM";
+    position: absolute;
+    bottom: 10px;
+    left: -5px;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box3:hover::after{
+    opacity: 0.04;
+}
+
+.container .box3 .name3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box3:hover .name3{
+    top: 40px;
+    opacity: 1;
+}
+
+
+.container .box3 .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: #fff;
+    background:linear-gradient(45deg, #fd1d1d,#e1306c,#c13584,#833ab4,#5851db, #405de6);
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+      
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+
+}
+
+.container .box3:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box3 .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+    z-index: 10;
+    opacity: 0;
+}
+
+
+.container .box3 .product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 200px;
+    transition: 0.5s;
+    z-index:11;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
+
+
+.container .box3:hover .product{
+    transform: translate3d(-50%,-50%,100px);
+}
+.container .box2:hover .product{
+    transform: translate3d(-50%,-50%,100px);
+}
+.container .box:hover .product{
+    transform: translate3d(-50%,-50%,100px);
+}
+
+.logo{
+    margin-top: 10px;
+    width: 100%;
+    min-height: 10vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   
+}
+
+#logo{
+    margin-top: 20px;
+    width: 30%;
+    margin: auto;
+    background: #131313
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transform-style: preserve-3d;
+    transform: translate3d(0%,0%,50px);
+    transition: 0.5s ease;
+    padding: 40px;
+    position: relative;
+}
+#logo::before{
+    content:"Hi, I'm";
+    position: absolute;
+    
+    top: -1px;
+    left: -2%;
+    font-size: 30px;
+}
+
+#logo::after{
+    content:"junior wannabe";
+    position: absolute;
+ 
+    right: 2%;
+    bottom: 1%;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s ease;
+    transform: translateY(30%);
+}
+
+#logo:hover::after{
+    opacity: 1;
+    transform: translateY(-30%)
+}
+
+
+#logo:hover{
+    transform-style: preserve-3d;
+    transform: translate3d(0%,0%,75px);
+}
+
+
+
